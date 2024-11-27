@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgendMed - Agendamento</title>
+    <style>
+        /* Estilos Gerais */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            background-color: #0073e6;
+            color: white;
+            padding: 15px;
+            border-radius: 10px;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 20px;
+        }
+
+        .menu-icon {
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+        main {
+            display: flex;
+            gap: 20px;
+        }
+
+        .consultas, .marcar-consulta {
+            flex: 1;
+        }
+
+        .consultas h2, .marcar-consulta h2 {
+            font-size: 18px;
+            margin-bottom: 15px;
+            color: #0073e6;
+        }
+
+        .consultas ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .consultas li {
+            margin-bottom: 15px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+
+        .consultas button {
+            background-color: #0073e6;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .consultas button:hover {
+            background-color: #005bb5;
+        }
+
+        form label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        form input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        form button {
+            width: 100%;
+            background-color: #0073e6;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        form button:hover {
+            background-color: #005bb5;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>AgendMed - Agendamento</h1>
+            <div class="menu-icon">☰</div>
+        </header>
+        <main>
+            <div class="consultas">
+                <h2>Consultas Agendadas</h2>
+                <ul>
+                    <li>
+                        <p>10/12/2024 - 14:30 - Posto de Saúde Central</p>
+                        <p>DR. José Almeida</p>
+                        <button>Adicionar Lembrete</button>
+                    </li>
+                    <li>
+                        <p>15/01/2025 - 09:00 - Clínica da Família</p>
+                        <p>Dra. Maria Oliveira</p>
+                        <button>Adicionar Lembrete</button>
+                    </li>
+                    <li>
+                        <p>20/01/2025 - 11:00 - Hospital Municipal</p>
+                        <p>DR. Carlos Souza</p>
+                        <button>Adicionar Lembrete</button>
+                    </li>
+                </ul>
+            </div>
+            <div class="marcar-consulta">
+                <h2>Marcar Consulta</h2>
+                <form>
+                    <label for="especialidade">Especialidade</label>
+                    <input type="text" id="especialidade" placeholder="Digite a especialidade">
+                    
+                    <label for="data">Data</label>
+                    <input type="date" id="data">
+                    
+                    <label for="local">Local</label>
+                    <input type="text" id="local" placeholder="Digite o local">
+                    
+                    <button type="submit">Adicionar</button>
+                </form>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

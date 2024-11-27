@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgendMed - Carteirinha</title>
+    <style>
+        /* Reset básico */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f9;
+        }
+
+        /* Cabeçalho */
+        header {
+            background-color: #0073e6;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+            position: relative;
+        }
+
+        header h1 {
+            font-size: 1.8rem;
+            font-weight: bold;
+        }
+
+        .menu-icon {
+            position: absolute;
+            right: 1rem;
+            top: 1.2rem;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        /* Conteúdo principal */
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 2rem;
+        }
+
+        .card {
+            background-color: #0073e6;
+            color: #fff;
+            padding: 1.5rem;
+            border-radius: 10px;
+            width: 100%;
+            max-width: 500px;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            position: relative;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .card img {
+            width: 100px;
+            height: 100px;
+            border-radius: 5px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            flex: 1;
+        }
+
+        .card-content h2 {
+            margin-bottom: 0.5rem;
+            font-size: 1.5rem;
+        }
+
+        .card-content p {
+            margin: 0.2rem 0;
+        }
+
+        .card-content .id {
+            background-color: #f4f4f9;
+            color: #333;
+            padding: 0.2rem 0.5rem;
+            border-radius: 5px;
+            font-weight: bold;
+            display: inline-block;
+        }
+
+        /* Botões */
+        .actions {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            max-width: 500px;
+            margin-top: 1rem;
+        }
+
+        .back-button, .save-button {
+            text-decoration: none;
+            color: #0073e6;
+            background-color: #f4f4f9;
+            padding: 0.8rem 1.5rem;
+            border: 1px solid #0073e6;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .back-button:hover, .save-button:hover {
+            background-color: #0073e6;
+            color: #fff;
+        }
+
+        .back-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .back-button::before {
+            content: "←";
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>AgendMed - Carteirinha</h1>
+        <div class="menu-icon">☰</div>
+    </header>
+    <main class="container">
+        <div class="card">
+            <img src="profile-picture.jpg" alt="Foto do usuário">
+            <div class="card-content">
+                <h2>Guilherme Costa</h2>
+                <p>Plano de saúde Amil</p>
+                <p><span class="id">0123456789</span></p>
+                <p>Data de Nascimento: 31/07/1997</p>
+            </div>
+        </div>
+        <div class="actions">
+            <a href="index.html" class="back-button">Voltar</a>
+            <a href="#" class="save-button">Salvar Carteirinha em PDF</a>
+        </div>
+    </main>
+</body>
+</html>
